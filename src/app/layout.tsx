@@ -2,11 +2,15 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "Starter Next Template by Gustavo Brun"
+  title: "Nature BIO Terrários",
+  description:
+    "Adicione um toque de natureza à sua casa com nossos terrários exclusivos."
 };
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children
@@ -14,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): React.JSX.Element {
   return (
-    <html lang="en">
-      <body>
+    <html lang="pt-BR">
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
