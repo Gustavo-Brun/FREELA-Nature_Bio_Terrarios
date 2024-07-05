@@ -6,7 +6,7 @@ import { Contact } from "@/components/Contact";
 
 export default function Home(): JSX.Element {
   return (
-    <main>
+    <main className="bg-gradient-to-br from-primary-color">
       <Header />
       <Products />
       <Feedback />
