@@ -3,6 +3,7 @@ import { Products } from "@/components/Products";
 import { Feedback } from "@/components/Feedback";
 import { BudgetRequest } from "@/components/BudgetRequest";
 import { Contact } from "@/components/Contact";
+import { Whatsapp } from "@/components/ui/whatsapp";
 
 export default function Home(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
       <Feedback />
       <BudgetRequest />
       <Contact />
+      <Whatsapp />
     </main>
   );
 }
